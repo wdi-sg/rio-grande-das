@@ -9,11 +9,11 @@ describe Book do
 
   # check initialization
   describe 'Initialization' do
-    it 'should be a book' do
+    it 'should be an instance of Book class' do
       expect(@book).to be_instance_of(Book)
     end
 
-    it 'should be an item' do
+    it 'should be a type of Item' do
       expect(@book).to be_kind_of(Item)
     end
 
@@ -35,23 +35,23 @@ describe Book do
   end
 
   # check getters and setters
-  describe 'getters and setters' do
-    it 'assigns and reads the name' do
+  describe 'Accessors' do
+    it 'should be able to get and set name' do
       @book.name = 'Paradise Lost'
       expect(@book.name).to eq('Paradise Lost')
     end
 
-    it 'assigns and reads the price' do
+    it 'should be able to get and set price' do
       @book.price = 20.00
       expect(@book.price).to eq(20.00)
     end
 
-    it 'assigns and reads the pages' do
+    it 'should be able to get and set pages' do
       @book.pages = 0
       expect(@book.pages).to eq(0)
     end
 
-    it 'assigns and reads the author' do
+    it 'should be able to get and set author' do
       @book.author = 'John Milton'
       expect(@book.author).to eq('John Milton')
     end
