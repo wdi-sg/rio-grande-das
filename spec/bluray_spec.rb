@@ -17,7 +17,6 @@ describe Bluray do
     it 'should be a child element of Item' do
       expect(@bluray).to be_kind_of(Item)
     end
-
   end
 
   # check getters and setters

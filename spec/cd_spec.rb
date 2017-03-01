@@ -4,7 +4,7 @@ require_relative '../lib/cd'
 describe Cd do
   before(:context) do
     # initialize item
-    @cd = Cd.new('Axel Rose',15.00,10, 'Guns and Roses', 50 )
+    @cd = Cd.new('Axel Rose', 15.00, 10, 'Guns and Roses', 50)
   end
 
 describe 'Initialization' do
@@ -57,7 +57,7 @@ end
       expect(@cd.artist).to eq('Blink 182')
     end
     it 'assigns and reads the run time' do
-      @cd.run_time= 40
+      @cd.run_time = 40
       expect(@cd.run_time).to eq(40)
     end
   end

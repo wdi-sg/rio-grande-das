@@ -11,3 +11,4 @@ attr_reader :tracks, :artist, :run_time, :quantity
     @artist = artist
     @run_time = run_time
   end
+end
