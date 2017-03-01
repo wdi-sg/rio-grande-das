@@ -1,4 +1,4 @@
-require_relative 'spec_helper'
+require 'spec_helper'
 require_relative '../lib/bluray'
 
 describe Bluray do
@@ -19,30 +19,32 @@ describe Bluray do
     end
 
   end
-end
 
-# check getters and setters
-describe 'Accessors' do
-  it 'should set/get name' do
-    @bluray.name = 'Beauty and The Beast'
-    expect(@bluray.name).to eq('Beauty and The Beast')
-  end
+  # check getters and setters
+  describe 'Accessors' do
+    it 'should set/get name' do
+      @bluray.name = 'Beauty and The Beast'
+      expect(@bluray.name).to eq('Beauty and The Beast')
+    end
 
-  it 'assigns and reads the price' do
-    @bluray.price = 60.00
-    expect(@bluray.price).to eq(60.00)
-  end
+    it 'should set/get the price' do
+      @bluray.price = 60.00
+      expect(@bluray.price).to eq(60.00)
+    end
 
-  it 'should set/get run_time' do
-    @bluray.run_time = 137
-    expect(@bluray.run_time).to eq(137)
-  end
-  it 'should set/get director' do
-    @bluray.director = 'James Mangold'
-    expect(@bluray.director).to eq('James Mangold')
-  end
-  it 'should set/get producer' do
-    @bluray.producer = 'Hutch Parker'
-    expect(@bluray.producer).to eq('Hutch Parker')
+    it 'should set/get run_time' do
+      @bluray.run_time = 137
+      expect(@bluray.run_time).to eq(137)
+    end
+
+    it 'should set/get director' do
+      @bluray.director = 'James Mangold'
+      expect(@bluray.director).to eq('James Mangold')
+    end
+
+    it 'should set/get producer' do
+      @bluray.producer = 'Hutch Parker'
+      expect(@bluray.producer).to eq('Hutch Parker')
+    end
   end
 end
