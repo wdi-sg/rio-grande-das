@@ -23,6 +23,16 @@ end
 
 # check getters and setters
 describe 'Accessors' do
+  it 'should set/get name' do
+    @bluray.name = 'Beauty and The Beast'
+    expect(@bluray.name).to eq('Beauty and The Beast')
+  end
+
+  it 'assigns and reads the price' do
+    @bluray.price = 60.00
+    expect(@bluray.price).to eq(60.00)
+  end
+
   it 'should set/get run_time' do
     @bluray.run_time = 137
     expect(@bluray.run_time).to eq(137)
