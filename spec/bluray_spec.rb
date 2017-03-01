@@ -15,7 +15,7 @@ describe Bluray do
 
     # check that it is an extended from Item
     it 'should be a child element of Item' do
-      expect(@bluray).to be < Item
+      expect(@bluray).to be_kind_of(Item)
     end
 
   end
