@@ -2,8 +2,7 @@ require_relative 'item.rb'
 
 class Cd < Item
 
-attr_accessor :name, :price, :description
-attr_reader :tracks, :artist, :run_time, :quantity
+attr_accessor :name, :price, :description, :tracks, :artist, :run_time, :quantity
 
   def initialize(name, price, tracks, artist, run_time)
     super(name, price)
