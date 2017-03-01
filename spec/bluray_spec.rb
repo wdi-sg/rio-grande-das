@@ -3,7 +3,7 @@ require_relative '../lib/bluray'
 
 describe Bluray do
   before(:context) do
-    @bluray = Bluray.new(129, 'Bill Condon', 'David Hoberman')
+    @bluray = Bluray.new('Beauty and The Beast', 60.00, 129, 'Bill Condon', 'David Hoberman')
   end
 
   # check initialization
