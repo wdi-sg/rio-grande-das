@@ -4,7 +4,7 @@ require_relative '../lib/digital_item'
 describe Digital_item do
   before(:context) do
     # initialize item
-    @digital_item = Digital_item.new('Introduction to Javascript', 45.00)
+    @digital_item = Digital_Item.new('Introduction to Javascript', 45.00)
   end
 
   # check initialization
