@@ -7,7 +7,7 @@ class Cd < Item
     @artist = artist
     @run_time = run_time
   end
-end
+
 
   def tracks
 
@@ -21,6 +21,7 @@ end
 
   end
 end
+
 
 
 

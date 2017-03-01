@@ -4,7 +4,7 @@ require_relative '../lib/cd'
 describe Cd do
   before(:context) do
     # initialize item
-    @cd = Cd.new(10, 'Guns and Roses', 50 )
+    @cd = Cd.new('Axel Rose',15.00,10, 'Guns and Roses', 50 )
   end
 
 describe 'Initialization' do
@@ -14,10 +14,16 @@ describe 'Initialization' do
   it 'should be an item' do
     expect(@cd).to be_kind_of(Item)
   end
-  it 'is assienged tracks(number of)' do
+  it 'is assigned a name' do
+    expect(@book.name).to eq('Axel Rose')
+  end
+  it 'is assigned a price' do
+    expect(@book.price).to eq(15.00)
+  end
+  it 'is assinged tracks(number of)' do
     expect(@cd.tracks).to eq(10)
   end
-  it 'is assienged an artist' do
+  it 'is assinged an artist' do
     expect(@cd.artist).to eq('Guns and Roses')
   end
   it 'is assigned a run time' do
@@ -30,6 +36,18 @@ end
   # check getters and setters
 
   describe 'getters and setters' do
+    it 'assigns and reads the name' do
+      @cd.name = 'Slash'
+      expect(@cd.name).to eq('Slash')
+    end
+    it 'assigns and reads the price' do
+      @cd.name = 15.00
+      expect(@cd.price).to eq(15.00)
+    end
+    it 'assigns and reads the tracks' do
+      @cd.tracks = 15
+      expect(@cd.tracks).to eq(15)
+    end
     it 'assigns and reads the tracks' do
       @cd.tracks = 15
       expect(@cd.tracks).to eq(15)
