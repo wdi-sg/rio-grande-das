@@ -15,10 +15,10 @@ describe 'Initialization' do
     expect(@cd).to be_kind_of(Item)
   end
   it 'is assigned a name' do
-    expect(@book.name).to eq('Axel Rose')
+    expect(@cd.name).to eq('Axel Rose')
   end
   it 'is assigned a price' do
-    expect(@book.price).to eq(15.00)
+    expect(@cd.price).to eq(15.00)
   end
   it 'is assinged tracks(number of)' do
     expect(@cd.tracks).to eq(10)
